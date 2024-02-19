@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <meta name="author" content="DNel2">
+    <meta name="description" content="A basic Scorekeeper Widget using JS and Bulma">
+    <!-- bulma framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+</head>
+
+<body>
+
+    <!-- CARD from Bulma -->
+
+
+    <!-- contains the main interactive item -->
+    <section>
+        <!-- Everything is inside here  -->
+        <div class="container">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <!-- image -->
+                    <img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="red and brown wooden table tennis racket">
+
+                    <header class="card-header">
+                        <div class="card-header-title">
+                            <p>
+                                Photo by <a
+                                    href="https://unsplash.com/@likeffer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Lisa
+                                    Keffer</a> on <a
+                                    href="https://unsplash.com/photos/red-and-brown-wooden-table-tennis-racket-i0kB5B9J8Ds?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                            </p>
+                        </div>
+                    </header>
+
+                    <div class="card-content">
+                        <div class="content">
+                            <h2>My Awesome Ping Pong Score Keeper</h2>
+                            <!-- Score Text -->
+                            <h1 class="title is-1">
+                                <span id="player1Score">0</span> to <span id="player2Score">0</span>
+                            </h1>
+                            <p class="subtitle">Use the buttons below to keep score</p>
+                            <!-- Score Keep Card Area -->
+                            <div class="score">
+                                <!-- instruction Text -->
+                                <label for="" class="label is-large is-inline">Playing To:</label>
+                                <!-- label and Dropdown -->
+                                <div class="select is-rounded">
+                                    <select id="pointsToWin">
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <!-- <a href="#" class="card-footer-item">Save</a>
+                            <a href="#" class="card-footer-item">Edit</a>
+                            <a href="#" class="card-footer-item">Delete</a> -->
+                            <button class="card-footer-item button is-success" id="p1Button">+1 Player One</button>
+                            <button class="card-footer-item button is-info" id="p2Button">+1 Player Two</button>
+                            <button class="card-footer-item button is-danger" id="resetScoreButton">Reset</button>
+                        </footer>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- link to my JS file -->
+    <script src="myapp.js"></script>
+</body>
+
+</html>
